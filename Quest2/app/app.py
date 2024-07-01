@@ -31,7 +31,7 @@ projects = [
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html', username = username, description = description)
+    return render_template('index.html', username = username, description = description, projects = projects))
 
 @app.route('/about')
 def about():
